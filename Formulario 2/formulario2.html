@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Formulario 2</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles2.css">
+</head>
+<body style="background-color: blueviolet;">
+    <div class="container">
+        <h3 class="text-center mt-8">Comercializadora Pacific Blue</h3>
+        <form id="formulario2">
+            <div class="form-row">
+                <div class="col">
+                    <label for="pedido" class="text-black-bold">PEDIDO:</label>
+                    <input type="text" class="form-control input-ancho" id="pedido" required>
+                </div>
+                <div class="col-auto col-3">
+                    <label for="cantidad" class="text-black-bold">CANTIDAD:</label>
+                    <input type="number" class="form-control form-control-sm input-estrecho" id="cantidad" required>
+                </div>
+            </div>
+            <div class="form-row mt-3">
+                <div class="col">
+                    <label for="producto" class="text-black-bold">PRODUCTO:</label>
+                    <input type="text" class="form-control input-ancho" id="producto" required>
+                </div>
+                <div class="col-auto col-3">
+                    <label for="valor" class="text-black-bold">VALOR:</label>
+                    <input type="number" class="form-control form-control-sm input-estrecho" id="valor" required>
+                </div>
+            </div>
+            <br>
+            <button type="submit" class="btn btn-primary mt-3">AGREGAR</button>
+        </form>
+
+        <div class="space-bottom"></div>
+        <br>
+        <h4 class="text-center">LISTADO DE PEDIDOS</h4>
+        <br>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>PEDIDO</th>
+                    <th>CANTIDAD</th>
+                    <th>PRODUCTO</th>
+                    <th>VALOR</th>
+                    <th>TOTAL</th>
+                </tr>
+            </thead>
+            <tbody id="listadoPedidos"></tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3"></td>
+                    <td class="text-right">TOTAL:</td>
+                    <td class="text-right" id="totalProductos"></td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./js/objetoFormulario2.js"></script>
+</body>
+</html>

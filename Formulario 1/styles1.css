@@ -1,0 +1,86 @@
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    padding: 20px;
+    background-color: #64EDB4;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+h4 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+.form-control {
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    padding: 8px;
+    max-width: 400px;
+    font-size: 16px;
+}
+
+.btn-primary {
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 16px;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.space-bottom {
+    margin-bottom: 15px;
+}
+
+.categories-list {
+    text-align: left;
+    list-style: none;
+    padding-left: 0;
+}
+
+.categories-list li {
+    margin-bottom: 8px;
+}
+
+.form-check {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.categoria-label {
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.checkbox-input {
+    width: 18px;
+    height: 18px;
+    vertical-align: middle;
+}

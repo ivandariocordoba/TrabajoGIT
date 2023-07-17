@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Formulario 1</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./styles1.css">
+</head>
+<body style="background-color: rgb(226, 43, 217);">
+    <div class="container">
+        <h3 class="text-center">Comercializadora Pacific Blue</h3>
+        <br>
+        <h4 class="text-center">CATEGORIA</h4>
+        <br>
+
+        <form id="formulario1">            
+            <div class="form-group">
+                <select class="form-control" id="categoria" required>
+                    <option value="" disabled selected>Selecciona una categoría</option>
+                    <option value="Licores">Licores</option>
+                    <option value="Alimentos">Alimentos</option>
+                    <option value="Herramientas">Herramientas</option>
+                    <option value="Varios">Varios</option>
+                </select>
+            </div>
+            <br>
+            <div class="form-group">
+                <input type="text" class="form-control" id="titulo" required>
+            </div>
+            <br>            
+            <div class="text-center"> 
+                <button type="submit" class="btn btn-primary">AGREGAR</button>
+            </div>
+            <br>
+        </form>
+
+        <div class="space-bottom"></div>
+
+        <h4 class="text-center">LISTADO CATEGORIA</h4>
+        <ul id="listadoCategorias" class="categories-list">
+
+        </ul>
+
+        <!-- Cuadritos de selección al frente de las palabras CATEGORIA 1 y CATEGORIA 2 -->
+        <div class="form-check form-check-inline">
+            <input type="checkbox" class="form-check-input" value="CATEGORIA 1" id="categoria1">
+            <label class="form-check-label categoria-label" for="categoria1">CATEGORIA 1</label>
+        </div>
+        <br> <!-- Espacio entre CATEGORIA 1 y CATEGORIA 2 -->
+        <div class="form-check form-check-inline">
+            <input type="checkbox" class="form-check-input" value="CATEGORIA 2" id="categoria2">
+            <label class="form-check-label categoria-label" for="categoria2">CATEGORIA 2</label>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./js/arrayFormulario1.js"></script>
+</body>
+</html>
